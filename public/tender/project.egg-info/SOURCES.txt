@@ -1,0 +1,14 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+tender/__init__.py
+tender/items.py
+tender/middlewares.py
+tender/pipelines.py
+tender/settings.py
+tender/spiders/__init__.py
+tender/spiders/beijing.py
+tender/spiders/zhejiang.py

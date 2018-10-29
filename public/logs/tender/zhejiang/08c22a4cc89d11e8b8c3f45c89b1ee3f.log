@@ -1,0 +1,1498 @@
+2018-10-05 20:49:02 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: tender)
+2018-10-05 20:49:02 [scrapy.utils.log] INFO: Versions: lxml 4.2.4.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.7.0 (default, Jul 23 2018, 20:22:55) - [Clang 9.1.0 (clang-902.0.39.2)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Darwin-17.7.0-x86_64-i386-64bit
+2018-10-05 20:49:02 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'tender', 'LOG_FILE': 'logs/tender/zhejiang/08c22a4cc89d11e8b8c3f45c89b1ee3f.log', 'NEWSPIDER_MODULE': 'tender.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['tender.spiders']}
+2018-10-05 20:49:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-05 20:49:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-05 20:49:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-05 20:49:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-05 20:49:02 [scrapy.core.engine] INFO: Spider opened
+2018-10-05 20:49:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-05 20:49:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-05 20:49:03 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://ccgp-beijing.gov.cn/robots.txt> (referer: None)
+2018-10-05 20:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html> (referer: None)
+2018-10-05 20:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html> (referer: None)
+2018-10-05 20:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html> (referer: None)
+2018-10-05 20:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html> (referer: None)
+2018-10-05 20:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html> (referer: None)
+2018-10-05 20:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html> (referer: None)
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20181001_1034753.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034742.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034740.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034739.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034731.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034730.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034729.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034725.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034712.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034713.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034700.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034698.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034688.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034686.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034675.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034666.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034662.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034658.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034653.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034656.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034657.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034639.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034627.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034629.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034625.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034622.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034624.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034626.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034751.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034750.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034746.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034744.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034735.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034728.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034727.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034726.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034711.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034709.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034710.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034699.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034697.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034701.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034628.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034603.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034598.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034597.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034599.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034602.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034604.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034579.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034584.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034585.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034586.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034583.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034587.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034563.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034689.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034687.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034685.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034690.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034677.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034676.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034673.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034674.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034661.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034660.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034654.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034659.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034655.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034663.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034637.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034636.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034638.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034640.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034623.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034619.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034621.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034620.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034600.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034601.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034581.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034582.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034578.html
+2018-10-05 20:49:03 [zhejiang] DEBUG: ./t20180930_1034580.html
+2018-10-05 20:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034627.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034629.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034626.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034625.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034657.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:03 [py.warnings] WARNING: /private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py:41: ScrapyDeprecationWarning: Call to deprecated function extract_unquoted. Use .extract() instead.
+
+2018-10-05 20:49:03 [py.warnings] WARNING: /usr/local/lib/python3.7/site-packages/scrapy/selector/unified.py:32: ScrapyDeprecationWarning: Call to deprecated function extract_unquoted. Use .extract() instead.
+  return [x.extract_unquoted() for x in self]
+
+2018-10-05 20:49:03 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034627.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:03 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034629.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:03 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034626.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:03 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034625.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:03 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034657.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034656.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034666.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034656.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034666.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034658.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034675.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034653.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034662.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034622.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034624.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034686.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034639.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034658.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034675.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034653.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034662.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034622.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034624.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034686.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034639.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034688.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034580.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034578.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034601.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034600.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034620.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034688.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034580.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034578.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034619.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034601.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034600.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034620.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034636.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034619.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034637.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034636.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034637.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034581.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034582.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034655.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034581.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034582.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034659.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034655.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034621.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034640.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034659.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034660.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034654.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034638.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034623.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034663.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034621.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034640.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034661.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034660.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034654.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034638.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034623.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034663.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034674.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034676.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034685.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034673.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034661.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034687.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034689.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034690.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034674.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034676.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034685.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034673.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034687.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034689.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034690.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034563.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034584.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034677.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+2018-10-05 20:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034587.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034563.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034584.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034677.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index_1.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034587.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034579.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034583.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034585.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034586.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034602.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034597.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034579.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034604.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034599.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034583.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034585.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034586.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034602.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034597.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034598.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034701.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034603.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034604.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034599.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034628.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034598.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034709.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034701.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034603.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034710.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034699.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034697.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034628.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index_2.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034726.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034711.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034727.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034709.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034710.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034699.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034697.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034735.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034728.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034726.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034711.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034727.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034744.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034751.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034735.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034750.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034728.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034698.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034746.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034744.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034751.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034750.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034698.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/t20180930_1034746.html> (referer: http://ccgp-beijing.gov.cn/xxgg/sjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034713.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034725.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034730.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034700.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034739.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034712.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034729.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034731.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034713.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:07 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034725.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:07 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034730.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:07 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034700.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:07 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034739.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:07 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034712.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:07 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034729.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:07 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034731.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034742.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034740.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20181001_1034753.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+2018-10-05 20:49:07 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034742.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:07 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20180930_1034740.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:07 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/t20181001_1034753.html> (referer: http://ccgp-beijing.gov.cn/xxgg/qjzfcggg/index.html)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/private/var/folders/st/ps6lclh97szgt_p6k3qf9cmr0000gp/T/tender-t-06-_5oakqcl.egg/tender/spiders/zhejiang.py", line 44, in parse_detail
+    content = re.sub(drop,'',content)
+NameError: name 're' is not defined
+2018-10-05 20:49:07 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-05 20:49:07 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 28344,
+ 'downloader/request_count': 91,
+ 'downloader/request_method_count/GET': 91,
+ 'downloader/response_bytes': 1316015,
+ 'downloader/response_count': 91,
+ 'downloader/response_status_count/200': 90,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 5, 12, 49, 7, 262249),
+ 'log_count/DEBUG': 176,
+ 'log_count/ERROR': 84,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 53280768,
+ 'memusage/startup': 53280768,
+ 'request_depth_max': 1,
+ 'response_received_count': 91,
+ 'scheduler/dequeued': 90,
+ 'scheduler/dequeued/memory': 90,
+ 'scheduler/enqueued': 90,
+ 'scheduler/enqueued/memory': 90,
+ 'spider_exceptions/NameError': 84,
+ 'start_time': datetime.datetime(2018, 10, 5, 12, 49, 2, 987195)}
+2018-10-05 20:49:07 [scrapy.core.engine] INFO: Spider closed (finished)
