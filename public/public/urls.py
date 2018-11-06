@@ -25,4 +25,9 @@ urlpatterns = [
     path('weixin/login/',a_view.weixin_login),
     path('worker/',a_view.worker),
     path('employer/',a_view.employer),
+
+    path('', w_v.index),
+    path('insert/', w_v.insert),
+    path('query/', w_v.query),
+    path('get/<str:object_id>/', w_v.get),
 ]
