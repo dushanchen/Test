@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>招标讯息搜索</title>
+</head>
+<body>
+<form method="Post" action='/query/'>
+	 {% csrf_token %} 
+	省：
+	<select name='province' value='{{province}}'>
+		<option value='上海'>上海</option>
+	</select>&nbsp;&nbsp;
+	<!-- 县、区：
+	<input type='text' name='area' value='{{area}}' />&nbsp;&nbsp; -->
+	公告类型:
+	<select name='type'>
+		<option value=''></option>
+		<option value='招标公告' {% if type == '招标公告' %}selected{% endif %}>招标公告</option>
+		<option value='澄清公告' {% if type == '澄清公告' %}selected{% endif %}>澄清公告</option>
+		<option value='询价公告' {% if type == '询价公告' %}selected{% endif %}>询价公告</option>
+		<option value='延期公告' {% if type == '延期公告' %}selected{% endif %}>延期公告</option>
+		<option value='谈判公告' {% if type == '谈判公告' %}selected{% endif %} >谈判公告</option>
+		<option value='竞争性磋商公告' {% if type == '竞争性磋商公告' %}selected{% endif %}>竞争性磋商公告</option>
+		<option value='单一来源公示' {% if type == '单一来源公示' %}selected{% endif %}>单一来源公示</option>
+		<option value='成交公告' {% if type == '成交公告' %}selected{% endif %}>成交公告</option>
+	</select>&nbsp;&nbsp;
+	发布时间：
+	<select name='publish_time'>
+		<option value=''></option>
+		<option value='2018-09-11' {% if publish_time == '2018-09-11' %}selected{% endif %} >2018-09-11</option>
+		<option value='2018-09-12' {% if publish_time == '2018-09-12' %}selected{% endif %}>2018-09-12</option>
+		<option value='2018-09-13' {% if publish_time == '2018-09-13' %}selected{% endif %}>2018-09-13</option>
+		<option value='2018-09-14' {% if publish_time == '2018-09-14' %}selected{% endif %}>2018-09-14</option>
+		<option value='2018-09-15' {% if publish_time == '2018-09-15' %}selected{% endif %}>2018-09-15</option>
+		<option value='2018-09-16' {% if publish_time == '2018-09-16' %}selected{% endif %}>2018-09-16</option>
+		<option value='2018-09-17' {% if publish_time == '2018-09-17' %}selected{% endif %}>2018-09-17</option>
+		<option value='2018-09-18' {% if publish_time == '2018-09-18' %}selected{% endif %}>2018-09-18</option>
+		<option value='2018-09-19' {% if publish_time == '2018-09-19' %}selected{% endif %}>2018-09-19</option>
+		<option value='2018-09-20' {% if publish_time == '2018-09-20' %}selected{% endif %}>2018-09-20</option>
+	</select>&nbsp;&nbsp;
+	关键字：
+	<input type="text" name='key' value='{{key}}' />
+	
+	<input type="submit" name="" value='查询'>
+</form>
+	<br>
+	{% for i in result %}
+	{{forloop.counter}}.<a href='/get/{{i.id}}/'>{{i.title}}</a><br>{{i.publish_time}}<br>
+	
+	{% empty %}
+	{% endfor %}
+</body>
+</html>
