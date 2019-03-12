@@ -1,2 +1,9 @@
-/.project
+db.sqlite3
 *.pyc
+.DS_Store
+media
+*.json
+out.txt
+err.txt
+sqlite3.db
+migrations/*

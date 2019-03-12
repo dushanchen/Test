@@ -1,1 +1,49 @@
-hello,worker!
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="page panel js_show">
+    <div class="page__hd">
+        <h1 class="page__title">工匠列表</h1>
+        <p class="page__desc">查询</p>
+    </div>
+    <div class="page__bd">
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd">图文组合列表</div>
+            <div class="weui-panel__bd">
+            	{% for w in workers %}
+	                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+	                    <div class="weui-media-box__hd">
+	                    	{% if w.icon %}
+	                        	<img class="weui-media-box__thumb" src="{{w.icon}}" alt="">
+	                    	{% else %}
+	                        	<img class="weui-media-box__thumb" src="{{w.avatar_url}}" alt="">
+	                        {% endif %}
+	                    </div>
+	                    <div class="weui-media-box__bd">
+	                        <h4 class="weui-media-box__title">{{w.name}}</h4>
+	                        <p class="weui-media-box__desc">{{w.age}}</p>
+	                        <p class=" weui-media-box__desc">{{w.city}}</p>
+	                        <p class="weui-media-box__desc">{{w.get_sex_display}}</p>
+	                        <p class="weui-media-box__desc">{{w.price}} 元 / 天</p>
+	                        <p class="weui-media-box__desc">
+	                        	{% for s in w.skill %}
+	                        		{{s.name}}
+	                        	{% empty %}
+	                        	{% endfor %}
+	                        </p>
+	                    </div>
+	                    <span class="weui-cell__ft"></span>
+	                </a>
+				{% empty}
+				{% endfor %}
+            </div>
+            <div class="weui-panel__ft">
+                <a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+                    <div class="weui-cell__bd">查看更多</div>
+                    <span class="weui-cell__ft"></span>
+                </a>    
+            </div>
+        </div>
+   </div>
+</div>
+{% endblock %}

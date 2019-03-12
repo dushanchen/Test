@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<div class="button-sp-area">
+	<form action='/mine/' method="POST">
+		{% csrf_token %}
+		<input type='hidden' name='action' value='type' />
+		<input type='hidden' name='type' value='Employer' />
+		<button type='submit' class="weui-btn weui-btn_plain-primary">我是包工</button>
+	</form>
+	<br>
+	<form action='/mine/' method="POST">
+		{% csrf_token %}
+		<input type='hidden' name='action' value='type' />
+		<input type='hidden' name='type' value='Worker' />
+		<button type='submit' class="weui-btn weui-btn_plain-primary">我是工匠</button>
+	</form>
+</div>
+
+{% endblock %}

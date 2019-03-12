@@ -64,9 +64,10 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   # 'tender.pipelines.TenderPipeline': 300,
+   'tender.pipelines.TenderPipeline': 300,
 }
 
+HTTP_CLIENT = 'http://localhost:8000/insert/'
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True

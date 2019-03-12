@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% block content %}
+	
+<div class='container' style='background: #f1f0f0 !important'>
+	<div class="page panel js_show">
+		<div class='weui-panel weui-panel_access'>
+		   <div class="weui-panel__bd">
+		        <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+		            <div class="weui-media-box__hd">
+		                <img class="weui-media-box__thumb" src='{{user.avatar_url}}' alt="">
+		            </div>
+		            <div class="weui-media-box__bd">
+		                <h4 class="weui-media-box__title">{{user.nickname}}</h4>
+		                <p class="weui-media-box__desc">{{user.get_type_display}}</p>
+		            </div>
+		        </a>
+		<br>
+
+		    </div>
+		</div>
+	</div>
+	<br>
+	<div class='page input js_show'>
+		<div class="page__bd">
+			<div class="weui-form-preview">
+	            <div class="weui-form-preview__hd">
+	                <div class="weui-form-preview__item">
+	                    <label class="weui-form-preview__label">{% if self %}我{% else %}他{% endif %}的资料</label>
+	                </div>
+	            </div>
+	            <div class="weui-form-preview__bd">
+	            	<div class="weui-form-preview__item">
+	                    <label class="weui-form-preview__label">实名:</label>
+	                    <span class="weui-form-preview__value">{{user.name | default:"-"}}</span>
+	                </div>
+	                <div class="weui-form-preview__item">
+	                    <label class="weui-form-preview__label">城市:</label>
+	                    <span class="weui-form-preview__value">{{user.city | default:"-"}}</span>
+	                </div>
+	                <div class="weui-form-preview__item">
+	                    <label class="weui-form-preview__label">单位:</label>
+	                    <span class="weui-form-preview__value">{{user.enterprise | default:"-"}}</span>
+	                </div>
+	                <div class="weui-form-preview__item">
+	                    <label class="weui-form-preview__label">手机号:</label>
+	                    <span class="weui-form-preview__value">{{user.phone | default:"-"}}</span>
+	                </div>
+	                <div class="weui-form-preview__item">
+	                    <label class="weui-form-preview__label">年龄:</label>
+	                    <span class="weui-form-preview__value">{{user.age | default:"-"}}</span>
+	                </div>
+	                <div class="weui-form-preview__item">
+	                    <label class="weui-form-preview__label">性别:</label>{{user.sex}}
+	                    <span class="weui-form-preview__value">{{user.get_sex_display | default:"-"}}</span>
+	                </div>
+	                <div class="weui-form-preview__item">
+	                    <label class="weui-form-preview__label">工价:</label>
+	                    <span class="weui-form-preview__value">{{user.price | default:"-"}} 元/ 天</span>
+	                </div>
+	                <div class="weui-form-preview__item">
+	                    <label class="weui-form-preview__label">技能:</label>
+	                    <span class="weui-form-preview__value">
+	                    	{% for i in user.skill.all %}
+	                    		{{i.name}},
+	                    	{% endfor %}
+	                    </span>
+	                </div>
+	                <div class="weui-form-preview__item">
+	                    <label class="weui-form-preview__label">个人说明:</label>
+	                    <span class="weui-form-preview__value">{{user.detail | default:""}}</span>
+	                </div>
+	            </div>
+	            {% if self %}
+	            <div class="weui-panel__ft">
+	                <a href="/mine/edit/" class="weui-cell weui-cell_access weui-cell_link">
+	                    <div class="weui-cell__bd">补全资料</div>
+	                    <span class="weui-cell__ft"></span>
+	                </a>    
+	            </div>
+	            {% endif %}
+	        </div>
+	    </div>
+		</div>
+	    <br>
+	    {% if self %}
+		    <div class='page input js_show'>
+		    <div class='weui-panel'>
+		    	<div class="weui-panel__hd">设置</div>
+		            <div class="weui-cell weui-cell_switch">
+		                <div class="weui-form-preview__label">手机号对他人是否可见</div>
+		                <div class="weui-cell__ft">
+		                    <label for="switchCP" class="weui-switch-cp">
+		                        <input id="switchCP" class="weui-switch-cp__input" type="checkbox" 
+		                        {% if user.user.show_phone %}checked="checked"{% endif %}>
+		                        <div class="weui-switch-cp__box"></div>
+		                    </label>
+		                </div>
+		            </div>
+		    </div>
+	    </div>
+	  {% endif %}
+</div>
+</div>
+{% endblock %}

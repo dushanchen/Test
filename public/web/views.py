@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from elasticsearch import Elasticsearch
-from wonder.settings import ES_URL
+from public.settings import ES_URL
 from django.http import JsonResponse
 from django.shortcuts import render
 

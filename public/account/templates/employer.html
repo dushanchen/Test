@@ -1,1 +1,40 @@
-hello,employer!
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="page panel js_show">
+    <div class="page__hd">
+        <h1 class="page__title">Panel</h1>
+        <p class="page__desc">面板</p>
+    </div>
+    <div class="page__bd">
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd">雇主列表</div>
+            <div class="weui-panel__bd">
+            	{% for w in employers %}
+	                <a href="/detail/{{w.id}}/" class="weui-media-box weui-media-box_appmsg">
+	                    <div class="weui-media-box__hd">
+	                    	{% if w.icon %}
+	                        	<img class="weui-media-box__thumb" src="{{w.icon}}" alt="">
+	                    	{% else %}
+	                        	<img class="weui-media-box__thumb" src="{{w.avatar_url}}" alt="">
+	                        	{% endif %}
+	                    </div>
+	                    <div class="weui-media-box__bd">
+	                        <h4 class="weui-media-box__title">{% if w.name %}{{w.name}}{% else %}{{w.nickname}}{% endif %}</h4>
+	                        <p class="weui-media-box__desc">城市:{{w.city | default:''}}</p>
+	                        <p class="weui-media-box__desc">技能:
+		                        {% for i in w.skill.all %}
+		                    		{{i.name}}&nbsp;
+		                    	{% endfor %}
+	                    	</p>
+	                    </div>
+	                </a>
+				{% empty %}
+				{% endfor %}
+				
+            </div>
+            
+        </div>
+   </div>
+</div>
+{% endblock %}

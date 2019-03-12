@@ -17,14 +17,18 @@ from django.contrib import admin
 from django.urls import path
 
 from account import views as a_view
+from web import views as w_v
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('login/',a_view.login),
     path('weixin/login/',a_view.weixin_login),
+    path('mine/',a_view.mine),
+    path('mine/edit/',a_view.edit),
     path('worker/',a_view.worker),
     path('employer/',a_view.employer),
+    path('detail/<int:user_id>/',a_view.detail),
 
     path('', w_v.index),
     path('insert/', w_v.insert),
