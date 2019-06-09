@@ -2,13 +2,21 @@
 {% block content %}
 
 <div class="page panel js_show">
-    <div class="page__hd">
-        <h1 class="page__title">Panel</h1>
+    <!-- <div class="page__hd">
+        <h1 class="page__title">包工</h1>
         <p class="page__desc">面板</p>
-    </div>
+    </div> -->
     <div class="page__bd">
         <div class="weui-panel weui-panel_access">
-            <div class="weui-panel__hd">雇主列表</div>
+            <div class="weui-panel__hd">> 包工列表
+            	<!-- <div style='float: right;'>
+            		<span>按地域查询</span>
+	            	<select>
+	            		<option>上海</option>
+	            		<option>北京</option>
+	            	</select>
+	            </div> -->
+            </div>
             <div class="weui-panel__bd">
             	{% for w in employers %}
 	                <a href="/detail/{{w.id}}/" class="weui-media-box weui-media-box_appmsg">

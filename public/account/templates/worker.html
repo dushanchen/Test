@@ -2,13 +2,13 @@
 {% block content %}
 
 <div class="page panel js_show">
-    <div class="page__hd">
+    <!-- <div class="page__hd">
         <h1 class="page__title">工匠列表</h1>
         <p class="page__desc">查询</p>
-    </div>
+    </div> -->
     <div class="page__bd">
         <div class="weui-panel weui-panel_access">
-            <div class="weui-panel__hd">图文组合列表</div>
+            <div class="weui-panel__hd">> 工匠列表</div>
             <div class="weui-panel__bd">
             	{% for w in workers %}
 	                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
@@ -34,15 +34,16 @@
 	                    </div>
 	                    <span class="weui-cell__ft"></span>
 	                </a>
-				{% empty}
+				{% empty %}
+				<div class="weui-panel__hd" style='text-align: center !important;height: 50px;padding-top: 30px'>无记录</div>
 				{% endfor %}
             </div>
-            <div class="weui-panel__ft">
+           <!--  <div class="weui-panel__ft">
                 <a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
                     <div class="weui-cell__bd">查看更多</div>
                     <span class="weui-cell__ft"></span>
                 </a>    
-            </div>
+            </div> -->
         </div>
    </div>
 </div>

@@ -1,1 +1,21 @@
-tender
+<div class="page article js_show">
+    <div class="page__hd">
+        <!-- <h1 class="page__title">{{object.title}}</h1>
+        <p class="page__desc">{{object.province}}</p> -->
+    </div>
+    <div class="page__bd">
+        <article class="weui-article">
+            <!-- <h1>大标题</h1> -->
+            <section>
+                <h2 class="title">{{object.title}}</h2>
+                <section>
+                   {{object.content | safe}}
+                </section>
+                 
+            </section>
+        </article>
+    </div>
+    <div class="page__ft">
+        <a href="javascript:home()"><img src="./images/icon_footer_link.png"></a>
+    </div>
+</div>

@@ -22,6 +22,7 @@ class BeijingSpider(scrapy.Spider):
 
     def parse_detail(self,response):
         content = response.css('div[style*="padding-left:30px"]').extract_unquoted()
+        publish_time = response.css('.datetime::text').extract_first()
         content = ''.join(content).replace('\t','').replace('\n','').replace('\xa0','')
         drop = '<a href=".(.*?)</a>'
         content = re.sub(drop,'',content)
@@ -36,5 +37,5 @@ class BeijingSpider(scrapy.Spider):
             'province':'北京',
             'id':'beijing_' + id,
             'source_url':url,
-            'publish_time':datetime.datetime.now().strftime('%Y-%m-%s %H:%M:%S')
+            'publish_time':publish_time if publish_time else datetime.date.today().strftime('%Y-%m-%d')
         }

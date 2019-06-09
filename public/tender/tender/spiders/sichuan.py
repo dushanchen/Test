@@ -40,7 +40,7 @@ class SichuanSpider(scrapy.Spider):
     
     def start_requests(self):
         reqs = []
-        for i in range(1,11):
+        for i in range(1,3):
             params = self.params
             params['curPage'] = str(i)
             req = scrapy.FormRequest(self.url,callback=self.parse,formdata=self.params)
@@ -65,14 +65,17 @@ class SichuanSpider(scrapy.Spider):
         id = url.split('.')[-2].split('/')[-1]
         title = py(py(result).find('.cont-info h1')[0]).text()
         content = py(py(result).find('#myPrintArea')).html()
+        time = py(py(result).find('.cont-info .time')[0]).text().replace('系统发布时间：','')
+        if time:
+            time = time[:10]
 
         if content:
             yield{
                 'id':'sichuan_' + id,
                 'title':title,
-                # 'publish_time':result['noticePubDate'],
                 'content':content,
                 'source_url':url,
-                'province':'四川'
+                'province':'四川',
+                'publish_time': time ,
             }
 

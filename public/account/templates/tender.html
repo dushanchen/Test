@@ -1,1 +1,140 @@
-tender
+{% extends 'base.html' %}
+{% block content %}
+<style type="text/css">
+    .weui-media-box__title{
+        font-size: 15px !important;
+        white-space: normal;
+    }
+</style>
+<div class="page searchbar js_show" id='container'>
+     
+    <div class="page__bd">
+    <!--     <div class="weui-search-bar weui-search-bar_focusing" id="searchBar">
+            <form class="weui-search-bar__form" action='' method="post"> 
+                <div class="weui-search-bar__box">
+                    <i class="weui-icon-search"></i>
+                    <input type="search" class="weui-search-bar__input" id="searchInput" name='key' 
+                    onkeyup='$(".weui-search-bar__form").submit()' placeholder="搜索" required="">
+                    <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                </div>
+                <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+                    <i class="weui-icon-search"></i>
+                    <span>搜索</span>
+                </label>
+            </form>
+        </div> -->
+
+      
+
+       <div class="weui-panel weui-panel_access">
+        <form action='' method="post" id='searchForm'>
+            <div class="weui-panel__hd">> 公告查询
+                <p>地域:
+                <select name='province' id='province' >
+                    <option value=''>选择地域...</option>
+                    <option {% if province == '上海' %}selected='true'{% endif %} value='上海'>上海</option>
+                    <option {% if province == '四川' %}selected='true'{% endif %} value='四川'>四川</option>
+                    <option {% if province == '北京' %}selected='true'{% endif %} value='北京'>北京</option>
+                    <option {% if province == '天津' %}selected='true'{% endif %} value='天津'>天津</option>
+                    <option {% if province == '黑龙江' %}selected='true'{% endif %} value='黑龙江'>黑龙江</option>
+                    <option {% if province == '吉林' %}selected='true'{% endif %} value='吉林'>吉林</option>
+                    <option {% if province == '广东' %}selected='true'{% endif %} value='广东'>广东</option>
+                    <option {% if province == '福建' %}selected='true'{% endif %} value='福建'>福建</option>
+                    <option {% if province == '重庆' %}selected='true'{% endif %} value='重庆'>重庆</option>
+                    <option {% if province == '江苏' %}selected='true'{% endif %} value='江苏'>江苏</option>
+                    <option {% if province == '浙江' %}selected='true'{% endif %} value='浙江'>浙江</option>
+                </select>
+            </p>
+            <p>关键字:<input type='text' name='key' id='key' value='{{key}}'/>
+            <p>发布时间:
+                <input type='date' name='publish_time' id='publish_time' value='{{publish_time}}'/>
+                <input type='hidden' name='page' id='page' value={{page}} />
+                <input type='hidden' name='action'  value='search' />
+                <input type='button' value='查询' onclick="$('#page').val(1);$('#searchForm').submit()" />
+            </p>
+            </div>
+            </form>
+            <div class="weui-panel__bd">
+                {% for r in result %}
+                <div class="weui-media-box weui-media-box_text">
+                    <a href='/tender/{{r.id}}/'><h4 class="weui-media-box__title">{{r.title}}</h4></a>
+                    <!-- <p class="weui-media-box__desc">{{r.content}}</p> -->
+                    <ul class="weui-media-box__info">
+                        <li class="weui-media-box__info__meta">{{r.province}}</li>
+                        <li class="weui-media-box__info__meta">{{r.publish_time}}</li>
+                        <!-- <li class="weui-media-box__info__meta weui-media-box__info__meta_extra">其它信息</li> -->
+                    </ul>
+                </div>
+                {% empty %}
+                <div class="weui-panel__ft" style="text-align: center;" id='no_data'>
+                    无更多数据
+                </div>
+                {% endfor %}
+            </div>
+            {% if result %}
+            <div class="weui-panel__ft" style="text-align: center;" id='loading'>
+                <i class="weui-loading weui-icon_toast"></i>
+            </div>
+            <div class="weui-panel__ft" style="text-align: center;display: none;" id='no_data'>
+                无更多数据
+            </div>
+            {% endif %}
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+{% block script %}
+    <script type="text/javascript">
+        
+        var search_flag = true
+
+        $(document).ready(function(){
+            console.info('dfdf')
+            $(window).scroll(function(){
+                console.info('ddddd')
+
+                var scrollTop = $(this).scrollTop();
+                var scrollHeight = $(document).height();
+                var windowHeight = $(this).height();
+                console.info(scrollTop)
+                console.info(scrollHeight)
+                console.info(windowHeight)
+                if(scrollTop + windowHeight == scrollHeight){
+                    if(search_flag){
+                        search();
+                    }
+               }
+          });
+            function search(){
+                $.ajax({
+                    url:'',
+                    type:'post',
+                    dataType:'html',
+                    data:{
+                        province:$('#province').val(),
+                        page:$('#page').val(),
+                        publish_time:$('#publish_time').val(),
+                        key:$('#key').val(),
+                        action:'page',
+                    },
+                    success:function(data){
+                        if(data.length==0){
+                            search_flag = false
+                            $('#loading').hide()
+                            $('#no_data').show()
+                        }
+                        console.info(data)
+                        $('.weui-panel__bd').append(data)
+                        var page = $('#page').val()
+                        $('#page').val(parseInt(page)+1)
+
+                    }
+                })    
+            }
+        })
+       
+        
+
+    </script>
+{% endblock %}

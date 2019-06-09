@@ -14,6 +14,8 @@ class Tender(models.Model):
     source_url = models.CharField(max_length=200,default='',verbose_name='原文链接')
     publish_time = models.DateTimeField(null=True,verbose_name='发布时间')
 
+    create_time = models.DateTimeField(auto_now_add=True, null=True, verbose_name='爬取时间')
+
     def __str__(self):
         return self.title
 

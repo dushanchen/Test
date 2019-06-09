@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 
 from account import views as a_view
 from web import views as w_v
@@ -29,9 +31,11 @@ urlpatterns = [
     path('worker/',a_view.worker),
     path('employer/',a_view.employer),
     path('detail/<int:user_id>/',a_view.detail),
+    path('tender/',a_view.tender),
+    path('tender/<str:tender_id>/',a_view.tender_detail),
 
     path('', w_v.index),
     path('insert/', w_v.insert),
     path('query/', w_v.query),
     path('get/<str:object_id>/', w_v.get),
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

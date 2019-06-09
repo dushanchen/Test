@@ -14,13 +14,27 @@ class GuangdongSpider(scrapy.Spider):
             yield response.follow(py(link).attr('href'), callback=self.parse_item)
 
     def parse_item(self, response):
-        doc = response.text
-        title = py(doc).find('.zw_c_c_title')
-        content = py(doc).find('.zw_c_c_cont')
-        
-        if title and content:
-            yield{
-                'title':py(title[0]).html(),
-                'content':py(content[0]).html()
-            }        
+        url = response.url
+
+        id = url.split('/id/')
+        if len(id) == 2:
+            id = id[1].split('.html')
+            if len(id) == 2:
+                id = id[0]
+
+                doc = response.text
+                title = py(doc).find('.zw_c_c_title')
+                content1 = py(doc).find('.zw_c_c_qx')
+                content2 = py(doc).find('.zw_c_c_cont')
+                time = py(doc).find('.zw_c_c_qx span:eq(3)').html()
+                time = time[:10]
+                
+                yield{
+                    'id':'guangdong_'+ id, 
+                    'title':py(title[0]).html(),
+                    'content':py(content1[0]).html() + py(content2[0]).html(),
+                    'province':'福建',
+                    'source_url':url,
+                    'publish_time':time
+                }        
 

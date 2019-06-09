@@ -7,7 +7,7 @@ from pyquery import PyQuery as py
 import datetime
 
 class JiangsuSpider(CrawlSpider):
-    today = datetime.datetime.today().strftime('%Y-%m-%d')
+    today = datetime.date.today().strftime('%Y-%m-%d')
     name = 'jiangsu'
     allowed_domains = ['www.ccgp-jiangsu.gov.cn']
     start_urls = [
@@ -40,19 +40,20 @@ class JiangsuSpider(CrawlSpider):
         time = response.css('.mid::text').extract_first()
         if time:
             time = time.split(':')[1].strip()
-        if time == self.today:
-            url = response.url
-            title = response.css('.dtit h1::text').extract_first()
-            content = py(py(response.text).find('.detail')[0]).html()
-            content = ''.join(content).replace('\t','').replace('\n','').replace('\xa0','')
-            if content:
-                id = url.split('/')[-1].split('.')[0]
+        # if time == self.today:
+        url = response.url
+        title = response.css('.dtit h1::text').extract_first()
+        content = py(py(response.text).find('.detail')[0]).html()
+        content = ''.join(content).replace('\t','').replace('\n','').replace('\xa0','')
+        if content:
+            id = url.split('/')[-1].split('.')[0]
 
-                yield{
-                    'id': 'jiangsu_' + id,
-                    'title': title.encode('utf-8').decode('unicode_escape'),
-                    'content': content.encode('utf-8').decode('unicode_escape'),
-                    'source_url': url,
-                    'province': '江苏',
+            yield{
+                'id': 'jiangsu_' + id,
+                'title': title,
+                'content': content,
+                'source_url': url,
+                'province': '江苏',
+                'publish_time': time,
                 }
     

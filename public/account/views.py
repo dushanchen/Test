@@ -1,12 +1,18 @@
 from django.shortcuts import render,redirect
+from elasticsearch import Elasticsearch
 from django.http import JsonResponse
-from urllib import parse
-import requests
-import json
+
+from django.views.decorators.csrf import csrf_exempt
 
 from .models import *
+from public.settings import ES_URL
 
+
+import json
+import requests
 import datetime
+from urllib import parse
+
 # Create your views here.
 
 
@@ -219,9 +225,64 @@ def employer(request):
     return render(request,'employer.html',ctx)
 
 
+@csrf_exempt
 @check_user
 def tender(request):
-    pass
+    _index = Elasticsearch(ES_URL)
+
+    ctx = {}
+    
+    ctx['page'] = page = int(request.POST.get('page','1'))
+
+    query = {
+            "query": {
+                "bool": {
+                    "must":[
+                    ]
+                }
+            },
+            "from": page * 20 -20,
+            "size": 20,
+            "_source":["title","province","publish_time","id"],
+            "sort":{
+                "publish_time":"desc"
+            }
+    }
+    
+    
+    if request.method == 'POST':
+        ctx['province'] = province = request.POST.get('province','上海')
+        ctx['key'] = key = request.POST.get('key','')
+        ctx['publish_time'] = publish_time = request.POST.get('publish_time','')
+        print(key)
+        if key:
+            query['query']['bool']['must'].append({'match_phrase': {'title':{'query':key}}})
+        if province:
+            query['query']['bool']['must'].append({"match": {"province": province}})
+        if publish_time:
+            query['query']['bool']['must'].append({"match": {"publish_time": publish_time}})
+    
+    print(query)
+    search_result = _index.search(index='tender', body=query)['hits']['hits']
+    print(search_result)
+    ctx['result'] = [_['_source'] for _ in search_result]
+
+    action = request.POST.get('action','')
+        
+    if action == 'page':    
+        return render(request,'tender_append.html',ctx)
+
+    return render(request,'tender.html',ctx)
+
+
+def tender_detail(request, tender_id):
+    _index = Elasticsearch(ES_URL)
+
+    ctx = {}
+    ctx['object'] = obj = _index.get(index='tender',doc_type='tender',id=tender_id)['_source']
+
+    print(obj)
+    return render(request,'tender_detail.html',ctx)
 
 
 def _save_attr_(obj,request):

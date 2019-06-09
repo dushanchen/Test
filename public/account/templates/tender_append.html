@@ -1,0 +1,9 @@
+{% for r in result %}
+<div class="weui-media-box weui-media-box_text">
+    <a href='/tender/{{r.id}}/'><h4 class="weui-media-box__title">{{r.title}}</h4></a>
+    <ul class="weui-media-box__info">
+        <li class="weui-media-box__info__meta">{{r.province}}</li>
+        <li class="weui-media-box__info__meta">{{r.publish_time}}</li>
+    </ul>
+</div>
+{% endfor %}

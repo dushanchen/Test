@@ -4,7 +4,10 @@ from scrapy.http import FormRequest
 from pyquery import PyQuery as p
 
 import re
+import requests
 import datetime
+
+
 class ShanghaiSpider(scrapy.Spider):
     name = 'shanghai'
     allowed_domains = ['www.zfcg.sh.gov.cn']
@@ -40,6 +43,7 @@ class ShanghaiSpider(scrapy.Spider):
         }
         
         types = [('05','cggg'),('14','dylygs'),('06','cjgg'),('05','qxgg'),('14','dylygs'),('06','cjgg')]
+        # types = [('05','cggg')]
 
         requests = []
         for t in types:
@@ -57,26 +61,57 @@ class ShanghaiSpider(scrapy.Spider):
         if len(links):
             for a in links:
                 href = a.attrib['value']
+                title = a.text
                 # yield scrapy.Request(url_2+href,callback=self.parse_tender,headers=self.headers)
-                yield response.follow(url_2+href,callback=self.parse_tender,headers=self.headers)
+
+                resp = requests.get(url_2+href, headers=self.headers)
+                content = resp.text
+                if content:
+                    c = p(resp.text).find('#templateContext')
+                    e = p(resp.text).find('.newinfotr1')
+                    drop = '<script(.*?)</script>|<textarea(.*?)>|</textarea>|<input(.*?)type="hidden"(.*?)>'
+
+                    if c:
+                        content = re.sub(drop,'',c.html())
+                        
+                    elif e:
+                        content = '<table><tbody>'+''.join([_p(_).outerHtml() for _ in e])+'</tbody></table>'[:50]
+                      
+                    else:
+                        content = ''
+                    
+                    yield{
+                        'id':'shanghai_' + href,
+                        'title':title,
+                        'content':content,
+                        'source_url':url_2+href,
+                        'province':'上海',
+                        'publish_time':datetime.date.today().strftime('%Y-%m-%d')
+                    }
+
+                # yield response.follow(url_2+href,callback=self.parse_tender,headers=self.headers)
         
 
-    def parse_tender(self,response):
+    # def parse_tender(self,response):
 
-        c = p(response.text).find('#templateContext')
-        e = p(response.text).find('.newinfotr1')
-        drop = '<script(.*?)</script>|<textarea(.*?)>|</textarea>|<input(.*?)type="hidden"(.*?)>'
+    #     c = p(response.text).find('#templateContext')
+    #     e = p(response.text).find('.newinfotr1')
+    #     drop = '<script(.*?)</script>|<textarea(.*?)>|</textarea>|<input(.*?)type="hidden"(.*?)>'
 
-        if c:
-            content = re.sub(drop,'',c.html())[:50]
+    #     if c:
+    #         content = re.sub(drop,'',c.html())
             
-        elif e:
-            content = '<table><tbody>'+''.join([_p(_).outerHtml() for _ in e])+'</tbody></table>'[:50]
+    #     elif e:
+    #         content = '<table><tbody>'+''.join([_p(_).outerHtml() for _ in e])+'</tbody></table>'[:50]
           
-        else:
-            content = ''
+    #     else:
+    #         content = ''
         
-        yield{
-            'title':content,
-            'url':response.url
-        }
+    #     yield{
+    #         'id':'shanghai_' + 
+    #         'title':content,
+    #         'content':content,
+    #         'source_url':'',
+    #         'area':'上海',
+    #         'publish_time':datetime.date.today().strftime('%Y%m%d')
+    #     }
