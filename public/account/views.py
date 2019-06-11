@@ -243,7 +243,7 @@ def tender(request):
             },
             "from": page * 20 -20,
             "size": 20,
-            "_source":["title","province","publish_time","id"],
+            "_source":["title","province","publish_time","id",'source_url'],
             "sort":{
                 "publish_time":"desc"
             }
