@@ -60,7 +60,7 @@ class ShandongSpider(scrapy.Spider):
             'title':response.meta['title'],
             'source_url':response.url,
             'content':content,
-            'province':'shandong',
+            'province':'山东',
             'publish_time':time,
         }
 

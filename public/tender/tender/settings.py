@@ -39,9 +39,9 @@ ROBOTSTXT_OBEY = False
 #TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-DEFAULT_REQUEST_HEADERS = {
-    'User-Agent':'Mozilla/5.0 (Windows NT 10.0;WOW64;Trident/7.0; rv:11.0) like Gecko',
-}
+# DEFAULT_REQUEST_HEADERS = {
+#     'User-Agent':'Mozilla/5.0 (Windows NT 10.0;WOW64;Trident/7.0; rv:11.0) like Gecko',
+# }
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
